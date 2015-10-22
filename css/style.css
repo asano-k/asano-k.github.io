@@ -68,9 +68,17 @@ background-image: url(../images/bg_h1_head.png),url(../images/bg_h1_bottom.png);
 background-repeat:no-repeat,no-repeat;
 background-position:left top,left bottom;
 }
+#concept #nav_concept a,
+#plan #nav_plan a,
+#fair #nav_fair a,
+#contact #nav_contact a,
+nav ul li a:hover{
+  background-position: 0 -45px;
+}
 .bnr_inner a p img:hover{
   opacity: 0.5;
 }
+
 /* 基本レイアウト ここまで↑ */
 
 /* トップページ ここから↓ */
