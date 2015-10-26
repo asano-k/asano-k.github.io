@@ -169,6 +169,9 @@ table tbody tr:nth-child(even){
 .gallery_box figure:first-child{
   margin-left: 0;
 }
+.gallery_box:first-of-type{
+  margin-top: 30px
+}
 /* 「ブライダルフェア」ページ ここまで↑ */
 
 /* 「お問い合わせ」ページ ここから↓ */
@@ -181,5 +184,16 @@ form p:nth-last-child(2){
 }
 form p:last-child{
   margin-bottom: 0;
+}
+input[type="text"]{
+  width: 200px;
+}
+input[type="email"]{
+  width: 300px;
+}
+textarea{
+  width: 420px;
+  height:115px;
+  overflow-y: scroll;
 }
 /* 「お問い合わせ」ページ ここまで↑ */
