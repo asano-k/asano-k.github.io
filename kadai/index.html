@@ -1,0 +1,136 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="ja" lang="ja">
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <meta http-equiv="Content-Style-Type" content="text/css" />
+    <meta http-equiv="Content-Script-Type" content="text/javascript" />
+    <meta http-equiv="imagetoolbar" content="no" />
+    <meta name="description" content="" />
+    <meta name="keywords" content="" />
+    <link rel="stylesheet" href="css/common.css" type="text/css" />
+    <script type="text/javascript" src="js/jquery.js"></script>
+    <script type="text/javascript" src="js/common.js"></script>
+    <script type="text/javascript">
+        $(function() {
+            $('#slide').slideshow({
+                autoSlide    : true,
+                effect       : 'fade',
+                type         : 'repeat',
+                interval     : 3000,
+                duration     : 500,
+                imgHoverStop : true,
+                navHoverStop : true
+            });
+            $(window).load(function() {
+                $(".topNaviColumn").uniformHeight();
+            });
+        });
+    </script>
+    <title>文具のアオキ</title>
+</head>
+<body>
+    <div id="container">
+        <div id="header">
+            <h1><a href="index.html"><img src="images/ロゴ.png" alt="SAMPLE WEB SITE" /></a></h1>
+            <div id="menu">
+                <ul>
+                    <li class="home active"><a href="index.html"></a></li>
+                    <li><a href="#conL">INFORMATION</a></li>
+                    <li><a href="#otoi">お問い合わせ</a></li>
+                </ul>
+            </div><!-- /#menu -->
+        </div><!-- /#header -->
+        <div id="slide">
+            <ul class="slideInner">
+                <li><img src="images/大きい２-2.jpg" alt="" width="940" height="300" /></li>
+                <li><img src="images/大きい１.jpg" alt="" width="940" height="300" /></li>
+                <li><img src="images/大きい３.jpg" alt="" width="940" height="300" /></li>
+            </ul>
+            <div class="slidePrev"><img src="images/nav_prev.png" alt="前へ"></div>
+            <div class="slideNext"><img src="images/nav_next.png" alt="次へ"></div>
+            <div class="controlNav"></div>
+        </div><!-- /#slide -->
+        <div id="contents">
+            <div class="topNavi">
+                <div class="topNaviColumn">
+                    <h2>電卓</h2>
+                    <div class="topNaviPhoto"><img src="images/calc.jpg" alt="" /></div>
+                    <p>え？そうです。ただの電卓です。</p>
+                    <p class="topNaviDetail"><a href="index.html">詳しくはこちら</a></p>
+                </div><!-- /.topNaviColumn -->
+                <div class="topNaviColumn">
+                    <h2>システム手帳</h2>
+                    <div class="topNaviPhoto"><img src="images/diary.jpg" alt="" /></div>
+                    <p>逸品文房具
+                        システム手帳
+                        選び抜かれた高品質な革を職人が丹念に仕上げた、丈夫で機能的なシステム手帳です。<br><br>
+                        バイブルサイズは、どなたにもお使いいただけるスタンダードな大きさ。
+                        美しさと耐久性を兼ね備えた本品は、長く使える最高のパートナーとなるでしょう。<br><br>
+                        サイズ：164mm×232mm×22mm<br>
+                        重量：502g</p>
+                        <p class="topNaviDetail"><a href="index.html">詳しくはこちら</a></p>
+                    </div><!-- /.topNaviColumn -->
+                    <div class="topNaviColumn">
+                        <h2>地球儀</h2>
+                        <div class="topNaviPhoto"><img src="images/globe.jpg" alt="" /></div>
+                        <p>地球儀というと、何の変哲もない商品のように思われがちですが、新しい作成法、新しいデザインを得て、非常に興味深い、おしゃれでインテリア性の高い商品になりました。<br><br>
+                            サイズ：30.5cm/4200万分の1<br>
+                            重量：1.4kg</p>
+                            <p class="topNaviDetail"><a href="index.html">詳しくはこちら</a></p>
+                        </div><!-- /.topNaviColumn -->
+                    </div><!-- /.topNavi -->
+                    <div id="conL">
+                        <div class="information">
+                            <h2>INFORMATION</h2>
+                            <dl>
+                                <dt>2015-11-02</dt>
+                                <dd>第1回更新しました。</dd>
+                                <dt>2015-11-04</dt>
+                                <dd>第2回更新しました。</dd>
+                                <br>
+                                <br>
+                            </dd>
+                        </dl>
+                    </div><!-- /.information -->
+                    <div class="submenu"></div><!-- /.submenu -->
+                    <div class="bnrL">
+                        <ul>
+                            <a href="index.html"><img src="images/map.gif" alt="" /></a>
+                        </ul>
+                    </div><!-- /.bnrL -->
+                    <div id="otoi">
+                        <div class="topNaviPhoto"><img src="images/mail.jpg" alt="" /></div>
+                        <h1>お問い合わせ</h1>
+                        <h>商品に関するご質問や、ご意見、ご希望など、なんでもお気軽にご連絡下さい。<br>
+                            「お名前」、「メールアドレス」、「ご質問・ご意見・ご希望」とも、全て<strong>必須事項</strong>ですので、ご記入宜しくお願いします。<br></h>
+                            <form action="#">
+                                <p>お名前<strong>（必須）</strong><br>
+                                    <input type="text" name= "name"required></p>
+                                    <p>メールアドレス<strong>（必須）</strong><br>
+                                        <input type="email" name="mail" required></p>
+                                        <p>ご質問・ご意見・ご希望<strong>（必須）</strong><br>
+                                            <textarea name="comment"required></textarea></p>
+                                            <input type="submit" value="確認する">
+                                        </form>
+                                    </div><!-- /.conL -->
+                                </div>
+                                <div id="conR">
+                                    <div class="submenu"></div><!-- /.submenu -->
+
+                                </div><!-- /.bnrR -->
+                            </div><!-- /.conR -->
+                        </div><!-- /#contents -->
+                        <div id="footMenu">
+                            <ul>
+                                <li><a href="#header">TOP</a></li>
+                                <li><a href="#conL">INFORMATION</a></li>
+                                <li><a href="#otoi">お問い合わせ</a></li>
+                            </ul>
+                        </div><!-- /#footerMenu -->
+                        <div id="footer">
+                            <div class="copyright">Copyright &copy; 2015 文具のアオキ All Rights Reserved.</div>
+                        </div><!-- /#footer -->
+                    </div><!-- /#container -->
+                </div><!-- /#pageTop -->
+            </body>
+            </html>
